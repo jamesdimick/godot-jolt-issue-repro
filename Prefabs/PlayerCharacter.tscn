@@ -1,0 +1,66 @@
+[gd_scene load_steps=7 format=3 uid="uid://cbnqllqrwlm0j"]
+
+[ext_resource type="Script" path="res://Scripts/PlayerController.cs" id="1_nx85x"]
+[ext_resource type="Texture2D" uid="uid://de0irtuvgjy1d" path="res://Textures/Prototype/Light/texture_02.png" id="2_nxgk2"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_n88kw"]
+rough = true
+
+[sub_resource type="CapsuleShape3D" id="1"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kq6pw"]
+albedo_texture = ExtResource("2_nxgk2")
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_575k2"]
+material = SubResource("StandardMaterial3D_kq6pw")
+
+[node name="PlayerCharacter" type="Node"]
+
+[node name="Body" type="RigidBody3D" parent="." groups=["Player"]]
+collision_mask = 15
+input_ray_pickable = false
+axis_lock_angular_x = true
+axis_lock_angular_y = true
+axis_lock_angular_z = true
+mass = 70.0
+physics_material_override = SubResource("PhysicsMaterial_n88kw")
+continuous_cd = true
+max_contacts_reported = 10
+contact_monitor = true
+can_sleep = false
+lock_rotation = true
+linear_damp = 0.99
+script = ExtResource("1_nx85x")
+
+[node name="Collider" type="CollisionShape3D" parent="Body"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("1")
+
+[node name="Mesh" type="MeshInstance3D" parent="Body"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+layers = 2
+mesh = SubResource("CapsuleMesh_575k2")
+skeleton = NodePath("")
+
+[node name="PlayerCamera" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 5)
+
+[node name="Offset" type="Node3D" parent="PlayerCamera"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+
+[node name="Forward" type="Node3D" parent="PlayerCamera/Offset"]
+transform = Transform3D(-1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, 0, 0, 0)
+
+[node name="Look" type="Node3D" parent="PlayerCamera/Offset/Forward"]
+
+[node name="GimbalY" type="Node3D" parent="PlayerCamera/Offset"]
+
+[node name="GimbalX" type="Node3D" parent="PlayerCamera/Offset/GimbalY"]
+
+[node name="GimbalZ" type="Node3D" parent="PlayerCamera/Offset/GimbalY/GimbalX"]
+
+[node name="Camera" type="Camera3D" parent="PlayerCamera/Offset/GimbalY/GimbalX/GimbalZ"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3)
+cull_mask = 786431
+current = true
+far = 250.0

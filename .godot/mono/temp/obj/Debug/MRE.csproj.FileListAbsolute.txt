@@ -1,0 +1,17 @@
+/home/james/Godot/MRE/.godot/mono/temp/bin/Debug/MRE.deps.json
+/home/james/Godot/MRE/.godot/mono/temp/bin/Debug/MRE.runtimeconfig.json
+/home/james/Godot/MRE/.godot/mono/temp/bin/Debug/MRE.dll
+/home/james/Godot/MRE/.godot/mono/temp/bin/Debug/MRE.pdb
+/home/james/Godot/MRE/.godot/mono/temp/bin/Debug/GodotSharp.dll
+/home/james/Godot/MRE/.godot/mono/temp/bin/Debug/GodotSharpEditor.dll
+/home/james/Godot/MRE/.godot/mono/temp/obj/Debug/MRE.csproj.AssemblyReference.cache
+/home/james/Godot/MRE/.godot/mono/temp/obj/Debug/MRE.GeneratedMSBuildEditorConfig.editorconfig
+/home/james/Godot/MRE/.godot/mono/temp/obj/Debug/MRE.AssemblyInfoInputs.cache
+/home/james/Godot/MRE/.godot/mono/temp/obj/Debug/MRE.AssemblyInfo.cs
+/home/james/Godot/MRE/.godot/mono/temp/obj/Debug/MRE.csproj.CoreCompileInputs.cache
+/home/james/Godot/MRE/.godot/mono/temp/obj/Debug/MRE.csproj.CopyComplete
+/home/james/Godot/MRE/.godot/mono/temp/obj/Debug/MRE.dll
+/home/james/Godot/MRE/.godot/mono/temp/obj/Debug/refint/MRE.dll
+/home/james/Godot/MRE/.godot/mono/temp/obj/Debug/MRE.pdb
+/home/james/Godot/MRE/.godot/mono/temp/obj/Debug/MRE.genruntimeconfig.cache
+/home/james/Godot/MRE/.godot/mono/temp/obj/Debug/ref/MRE.dll

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "XIIsTECiGuWdgHl201iUsXedVMa0UQlKo+YA1rIrbet6bcY0uj6cnR9p/6vTLag4vo/VepVxcNyAMvjvwAvOmg==",
+  "success": true,
+  "projectFilePath": "/home/james/Godot/MRE/MRE.csproj",
+  "expectedPackageFiles": [
+    "/home/james/.local/share/godot/mono/GodotNuGetFallbackFolder/godot.sourcegenerators/4.0.3/godot.sourcegenerators.4.0.3.nupkg.sha512",
+    "/home/james/.local/share/godot/mono/GodotNuGetFallbackFolder/godotsharp/4.0.3/godotsharp.4.0.3.nupkg.sha512",
+    "/home/james/.local/share/godot/mono/GodotNuGetFallbackFolder/godotsharpeditor/4.0.3/godotsharpeditor.4.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
